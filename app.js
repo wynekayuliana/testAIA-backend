@@ -33,7 +33,7 @@ var flickrRouter = require('./routes/flickr');
 // set routers
 var api = '/api/';
 
-app.use('/', indexRouter);
+app.use(api + 'index', indexRouter);
 app.use(api + 'users', usersRouter);
 app.use(api + 'flickr', flickrRouter);
 
